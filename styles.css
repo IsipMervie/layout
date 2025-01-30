@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container-box {
+  background-color: #c7f0c7;
+  padding: 20px;
+  margin: 10px;
+  border: 7px solid #238000;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Header Section */
+.container-h_box {
+  background-color: #add8e6;
+  padding: 20px;
+  margin: 10px;
+  border: 7px solid #2000ff;
+  display: flex;
+}
+
+.container-h1_box, .container-h3_box {
+  background-color: #fcdab9;
+  padding: 20px;
+  margin: 5px;
+  border: 7px solid #f78072;
+  flex: 1;
+  height: 90px;
+}
+
+.container-h2_box {
+  background-color: #fcdab9;
+  padding: 20px;
+  margin: 5px;
+  border: 7px solid #f78072;
+  flex: 1;
+  height: 90px;
+  display: flex;
+}
+
+.container-h2_box_a, .container-h2_box_b {
+  background-color: #fac0cb;
+  border: 6px solid #f40105;
+  flex: 1;
+  margin: -13px;
+  height: 65px;
+}
+
+.container-h2_box_b {
+  border-left: 15px solid #d5192a;
+}
+
+/* Middle Section */
+.container-m_box {
+  display: flex;
+}
+
+.container-m1_box {
+  background-color: #fabbbb;
+  padding: 20px;
+  margin: 10px;
+  border: 7px solid #a52b2a;
+  flex: 1;
+  height: 300px;
+}
+
+.container-m2_box {
+  flex: 1;
+}
+
+.container-m2_box_a, .container-m2_box_b {
+  background-color: #fabbbb;
+  padding: 20px;
+  margin: 10px;
+  border: 7px solid #a52b2a;
+  height: 145px;
+}
+
+/* Lower Section */
+.container-l_box {
+  background-color: #add8e6;
+  padding: 10px;
+  margin: 10px;
+  border: 7px solid #2000ff;
+  display: flex;
+}
+
+.container-l1_box, .container-l4_box {
+  background-color: #e2deff;
+  padding: 20px;
+  margin: 5px;
+  border: 7px solid #6a5acd;
+  flex: 2;
+  height: 90px;
+}
+
+.container-l2_box, .container-l3_box {
+  background-color: #fcdab9;
+  padding: 10px;
+  margin: 5px;
+  border: 7px solid #f78072;
+  flex: 1;
+  height: 90px;
+}
+
+/* Footer Styles */
+.footer {
+ 
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
