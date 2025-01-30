@@ -3,126 +3,144 @@
 }
 
 body {
-  color: white;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-.container-box {
-  background-color: #c7f0c7;
-  padding: 20px;
-  margin: 10px;
-  border: 7px solid #238000;
   max-width: 1200px;
-  width: 100%;
+  margin: auto;
+  padding-top: 60px;
 }
 
-/* Header Section */
-.container-h_box {
-  background-color: #add8e6;
+.box {
+  background-color: #C7F0C7;
   padding: 20px;
   margin: 10px;
-  border: 7px solid #2000ff;
-  display: flex;
+  border: 5px solid #238000;
 }
 
-.container-h1_box, .container-h3_box {
-  background-color: #fcdab9;
-  padding: 20px;
-  margin: 5px;
-  border: 7px solid #f78072;
-  flex: 1;
-  height: 90px;
+
+.header {
+  background-color: #ADD8E6;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 5px solid #2000FF;
+  display: grid;
+  grid-template-areas: 'header-left header-center header-right';
 }
 
-.container-h2_box {
-  background-color: #fcdab9;
-  padding: 20px;
-  margin: 5px;
-  border: 7px solid #f78072;
-  flex: 1;
-  height: 90px;
-  display: flex;
+.header-left {
+  grid-area: header-left;
+  background-color: #FCDAB9;
+  margin: 4px;
+  border: 5px solid #F78072;
+  height: 100px;
 }
 
-.container-h2_box_a, .container-h2_box_b {
-  background-color: #fac0cb;
-  border: 6px solid #f40105;
-  flex: 1;
-  margin: -13px;
-  height: 65px;
+.header-center {
+  grid-area: header-center;
+  background-color: #FCDAB9;
+  padding: 10px;
+  margin: 4px;
+  border: 5px solid #F78072;
+  height: 100px;
+  display: grid;
+  grid-template-areas: 'center-left center-right';
 }
 
-.container-h2_box_b {
-  border-left: 15px solid #d5192a;
+.header-right {
+  grid-area: header-right;
+  background-color: #FCDAB9;
+  padding: 10px;
+  margin: 4px;
+  border: 5px solid #F78072;
+  height: 100px;
 }
 
-/* Middle Section */
-.container-m_box {
-  display: flex;
+.center-left {
+  background-color: #FAC0CB;
+  border: 5px solid #F40105;
+  grid-area: center-left;
 }
 
-.container-m1_box {
-  background-color: #fabbbb;
-  padding: 20px;
-  margin: 10px;
-  border: 7px solid #a52b2a;
-  flex: 1;
+.center-right {
+  background-color: #FAC0CB;
+  border: 5px solid #F40105;
+  grid-area: center-right;
+}
+
+
+.content {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-areas: 'sidebar main-content'
+                       'sidebar extra-content';
+  grid-gap: 15px 10px;
+}
+
+.sidebar {
+  margin-right: 4px;
+  background-color: #FABBBB;
+  border: 5px solid #A52B2A;
   height: 300px;
+  grid-area: sidebar;
 }
 
-.container-m2_box {
-  flex: 1;
+.main-content {
+  border: 5px solid yellow;
+  background-color: #FABBBB;
+  border: 5px solid #A52B2A;
+  grid-area: main-content;
 }
 
-.container-m2_box_a, .container-m2_box_b {
-  background-color: #fabbbb;
-  padding: 20px;
-  margin: 10px;
-  border: 7px solid #a52b2a;
-  height: 145px;
+.extra-content {
+  border: 5px solid yellow;
+  background-color: #FABBBB;
+  border: 5px solid #A52B2A;
+  grid-area: extra-content;
 }
 
-/* Lower Section */
-.container-l_box {
-  background-color: #add8e6;
-  padding: 10px;
-  margin: 10px;
-  border: 7px solid #2000ff;
-  display: flex;
-}
 
-.container-l1_box, .container-l4_box {
-  background-color: #e2deff;
-  padding: 20px;
-  margin: 5px;
-  border: 7px solid #6a5acd;
-  flex: 2;
-  height: 90px;
-}
-
-.container-l2_box, .container-l3_box {
-  background-color: #fcdab9;
-  padding: 10px;
-  margin: 5px;
-  border: 7px solid #f78072;
-  flex: 1;
-  height: 90px;
-}
-
-/* Footer Styles */
 .footer {
- 
-  color: rgb(0, 0, 0);
-  text-align: center;
+  background-color: #ADD8E6;
   padding: 10px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  height: 120px;
+  border: 5px solid #2000FF;
+  display: grid;
+  grid-template-areas: 'footer-left footer-left footer-center-left footer-center-right footer-right footer-right';
+}
+
+.footer-left {
+  background-color: #dfd9fd;
+  margin: 4px;
+  border: 5px solid #6A5ACD;
+  grid-area: footer-left;
+}
+
+.footer-center-left {
+  background-color: #FCDAB9;
+  margin: 4px;
+  border: 5px solid #F78072;
+  grid-area: footer-center-left;
+}
+
+.footer-center-right {
+  background-color: #FCDAB9;
+  margin: 4px;
+  border: 5px solid #F78072;
+  grid-area: footer-center-right;
+}
+
+.footer-right {
+  background-color: #dfd9fd;
+  margin: 4px;
+  border: 5px solid #6A5ACD;
+  grid-area: footer-right;
+}
+
+
+.owner {
+  text-align: center;
+  padding-top: 20px; 
+}
+
+.owner > p {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 2em;
 }
